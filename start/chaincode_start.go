@@ -81,7 +81,10 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface, function stri
 
 // Query callback representing the query of a chaincode
 func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function string, args []string) ([]byte, error) {
+	fmt.Printf("hello !!! we are alive")
 	return nil, nil
+
+
 }
 
 func main() {
@@ -90,3 +93,4 @@ func main() {
 		fmt.Printf("Error starting Simple chaincode: %s", err)
 	}
 }
+
